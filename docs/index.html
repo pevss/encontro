@@ -1,105 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Agora vai</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💌</text></svg>"
+		/>
+		<script src="./js/script.js" defer></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olá, gatinha!</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💌</text></svg>">
-    <script src="./js/script.js" defer></script>
-</head>
+	<body>
+		<div class="app">
+			<main class="interface">
+				<section class="page page-1">
+					<h1 class="main-text">Olá, Iara!</h1>
 
-<body>
-    <div class="app">
-        <main class="interface">
-            <section class="page page-1">
-                <h1 class="main-text">Olá, Iara! 😍</h1>
+					<p class="text">Familiar esse site, não?</p>
+					<p class="text">
+						O desenvolvedor dele queimou alguns neurônios pensando
+						em opções de date e reescrevendo o código fonte
+						kkkkkkkkk
+					</p>
+					<p class="text">Dito isso...</p>
 
-                <p class="text">Acontece que o desenvolvedor desse lindo e muito bem desenvolvido site acabou gostando
-                    bastante de falar contigo.</p>
-                <p class="text">Infelizmente, durante a semana, ele é ocupado demais e não consegue conversar o tanto
-                    quanto ele gostaria de conversar contigo.</p>
-                <p class="text">Dito isso...</p>
+					<div class="question hidden">
+						<p class="text">
+							<strong
+								>Bora sair, a oferta ainda é a mesma :)</strong
+							>
+						</p>
 
-                <div class="question hidden">
-                    <p class="text"><strong>Aceitas sair no domingo com o desenvolvedor desse lindo e muito bem
-                            desenvolvido site?</strong></p>
+						<img
+							src="https://i.imgflip.com/92mjgl.jpg"
+							height="500px"
+							alt=""
+						/>
 
-                    <img src="https://i.imgflip.com/92mjgl.jpg" height="500px" alt="">
+						<div class="buttons-container">
+							<button class="she-said-yes next">Sim</button>
+							<button class="shy">Não</button>
+						</div>
+					</div>
+				</section>
 
-                    <div class="buttons-container">
-                        <button class="she-said-yes next">Sim</button>
-                        <button class="shy">Não</button>
-                    </div>
-                </div>
-            </section>
+				<section class="page page-2 hidden">
+					<h1 class="main-text">
+						Que bom que aceitasse! Tenho certeza que nem precisou
+						pensar muito 😎
+					</h1>
 
-            <section class="page page-2 hidden">
-                <h1 class="main-text">Que bom que aceitasse! Tenho certeza que nem precisou pensar muito 😎</h1>
+					<p class="text">
+						Aqui vão algumas sugestões do que vocês dois podem
+						fazer. Por favor, selecione a que mais te agradar:
+					</p>
 
-                <p class="text">Aqui vão algumas sugestões do que vocês dois podem fazer. Por favor, selecione a que
-                    mais te agradar:</p>
+					<ul class="options">
+						<li
+							style="pointer-events: none"
+							class="option option-1 next hidden"
+						>
+							Gatoffee (santa mônica)
+						</li>
+						<li
+							style="pointer-events: none"
+							class="option option-2 recommended next hidden"
+						>
+							Mozza Pizza Bar quarta (centro)
+						</li>
+						<li
+							style="pointer-events: none"
+							class="option option-3 next hidden"
+						>
+							Ir para a beiramar sem rumo na quarta e descobrir na
+							hora
+						</li>
+						<li
+							style="pointer-events: none"
+							class="option option-3 recommended next hidden"
+						>
+							Circo Mirage (pantanal)
+						</li>
+					</ul>
+				</section>
 
-                <ul class="options">
-                    <li class="option option-1 recommended next hidden">Caminhada na Beira Mar + Nonnonapo</li>
-                    <li class="option option-2 hidden">kkkkkkk só tem uma sugestão</li>
-                </ul>
-            </section>
+				<section class="page page-3 hidden">
+					<h1 class="main-text">
+						Ótima escolha! Tenho certeza que você vai gostar
+					</h1>
 
-            <section class="page page-3 hidden">
-                <h1 class="main-text">Ótima escolha! Tenho certeza que você vai gostar</h1>
+					<p class="text">
+						Por favor, insira o número do seu celular para que
+						possamos entrar em contato contigo a fim de te retornar
+						sobre a possível confirmação do seu encontro:
+					</p>
 
-                <p class="text">Por favor, insira o número do seu celular para que possamos entrar em contato contigo a
-                    fim de te retornar sobre a possível confirmação do seu encontro:</p>
+					<!-- <form class="phone-number-form">
+						<input
+							name="number"
+							type="text"
+							placeholder="(00) 00000-0000"
+							class="cellphone"
+						/>
+						<input type="submit" value="->" class="submit-number" />
+					</form> -->
 
-                <form class="phone-number-form">
-                    <input name="number" type="text" placeholder="(00) 00000-0000" class="cellphone">
-                    <input type="submit" value="->" class="submit-number">
-                </form>
+					<!-- this was .hidden -->
+					<div class="show-aftersubmit">
+						<div class="line"></div>
 
-                <div class="show-aftersubmit hidden">
-                    <div class="line"></div>
+						<p class="text">
+							<strong
+								>Suas respostas foram enviadas para
+								análise.</strong
+							>
+							Em breve você deve receber uma mensagem no seu
+							celular com as informações adicionais sobre o seu
+							encontro.
+						</p>
 
-                    <p class="text"><strong>Suas respostas foram enviadas para análise.</strong> Em breve você deve
-                        receber uma mensagem
-                        no seu celular com as informações adicionais sobre o seu encontro.</p>
+						<p class="text">Agradecemos o seu interesse :)</p>
 
-                    <p class="text">Agradecemos o seu interesse :)</p>
+						<ul class="faq">
+							<h2 class="faq-title">FAQ</h2>
+							<li class="faq-question question-1">
+								<h2 class="question-question">
+									Devo me preocupar com dinheiro?
+								</h2>
+								<p class="text">
+									<strong>É claro que não!</strong> Você está
+									saindo com um cavalheiro que terá o prazer
+									de cobrir todos gastos. Aproveita!
+								</p>
+							</li>
+							<li class="faq-question question-2">
+								<h2 class="question-question">Tem certeza?</h2>
+								<p class="text">Sim.</p>
+							</li>
+							<li class="faq-question question-3">
+								<h2 class="question-question">
+									E o transporte, devo me preocupar?
+								</h2>
+								<p class="text">
+									<strong>Claro que não né.</strong> Mas
+									depende de você, recomendamos fortemente que
+									você passe o seu enderço (ou o de algum
+									lugar que você se sinta mais confortável)
+									para o cavalheiro com o qual você irá sair.
+									Assim, você será buscada e levada em casa
+									após o date com todo o conforto que você
+									merece (uber xd xd).
+								</p>
+							</li>
+							<li class="faq-question question-4">
+								<h2 class="question-question">
+									Tem certeza MESMO?
+								</h2>
+								<p class="text">De novo, sim.</p>
+							</li>
+						</ul>
 
-                    <ul class="faq">
-                        <h2 class="faq-title">FAQ</h2>
-                        <li class="faq-question question-1">
-                            <h2 class="question-question">Devo me preocupar com dinheiro?</h2>
-                            <p class="text"><strong>É claro que não!</strong> Você está saindo com um cavalheiro que
-                                terá o prazer de
-                                cobrir todos gastos. Aproveita!</p>
-                        </li>
-                        <li class="faq-question question-2">
-                            <h2 class="question-question">Tem certeza?</h2>
-                            <p class="text">Sim.</p>
-                        </li>
-                        <li class="faq-question question-3">
-                            <h2 class="question-question">E se estiver muito frio?</h2>
-                            <p class="text"><strong>RE-LA-XA!</strong> A pessoa com quem você vai sair pode se adaptar a
-                                quaisquer
-                                situações.
-                                Acha que vai estar frio? Pede um moletom extra (esses vêm bem cheirosos).</p>
-                        </li>
-                    </ul>
+						<p class="text">
+							Qualquer outra dúvida ou comentário, sinta-se a
+							vontade para falar com a nossa equipe de suporte.
+						</p>
 
-                    <p class="text">Qualquer outra dúvida ou comentário, sinta-se a vontade para falar com a nossa
-                        equipe de suporte.</p>
-
-                    <ul class="contacts">
-                        <li class="contact contact-1">Whats: (48) 98807-4991</li>
-                        <li class="contact contact-2">Insta: @_pevs</li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-    </div>
-</body>
-
+						<ul class="contacts">
+							<li class="contact contact-1">
+								Whats: (48) 98807-4991
+							</li>
+							<li class="contact contact-2">Insta: @_pevs</li>
+						</ul>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
 </html>
